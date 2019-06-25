@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Member">
+
+<insert id="addmember" parameterType="fin.hk.pro.model.MemberDTO">
+	INSERT INTO MEMBER(ID, PWD, NAME, EMAIL, AUTH)
+	VALUES(#{id}, #{pwd}, #{name}, #{email}, 3)
+	
+</insert>
+
+<select id="logincheck" parameterType="fin.hk.pro.model.MemberDTO"
+	resultType="fin.hk.pro.model.MemberDTO"> <!-- resultType == return type -->
+	SELECT ID, NAME, EMAIL, AUTH FROM MEMBER
+	WHERE ID=#{id} AND PWD=#{pwd}
+</select>
+   
+</mapper>
