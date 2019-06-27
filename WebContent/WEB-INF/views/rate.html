@@ -1,0 +1,182 @@
+<html>
+	<head>
+    	<title>TEST</title>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">		
+		<link rel="stylesheet" href="../../css/common.css">
+
+		<style>
+			.form-div {
+				margin-bottom: 20px;
+			}
+			.form-div .form-cat{
+				font-weight: 600;
+				font-size: 16px;
+			}
+		</style>
+	</head>  
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" style="padding: 20px 0 20px 0; text-align:center;">
+					<h4>KB-fintech은행</h4>
+				</div>
+				
+				<div class="col-lg-12">
+					<div class="top-menu col-lg-4 active">환율</div>
+					<div class="top-menu col-lg-4">환전</div>
+					<div class="top-menu col-lg-4">계좌</div>
+				</div>
+
+				<div class="col-lg-12 main-content">
+					<select class="form-control" style="width: 20%;">
+						<option value="">통화를 선택하세요</option>
+						<option value="">달러</option>
+						<option value="">유로</option>
+						<option value="">엔화</option>
+					</select>
+				</div>
+
+				<div class="col-lg-12">
+					<div class="col-lg-6">
+						<h4>현재 환율</h4>
+						<div class="block-line"></div>
+						<div>
+							(그래프내용...)
+						</div>
+						<div>
+							<table class="table" style="font-size: 13px;">
+								<thead>
+									<colgroup>
+										<col width="" />
+										<col width="" />
+										<col width="" />
+										<col width="" />
+										<col width="" />
+										<col width="" />
+										<col width="" />
+										<col width="" />
+										<col width="" />
+										<col width="" />
+										<col width="" />
+									</colgroup>
+								</thead>
+								<tbody>
+									<tr>
+										<th rowspan="3">통화(통화명)</th>
+										<th rowspan="3">매매기준율</th>
+										<th colspan="2">송금(전신환)</th>
+										<th colspan="4">현찰</th>
+										<th rowspan="3">여행자<br>수표(T/C)<br>사실 때</th>
+										<th rowspan="3">미화환산율</th>
+										<th rowspan="3">외화수표 파실 때</th>
+									</tr>
+									<tr>
+										<th rowspan="2">보내실 때</th>
+										<th rowspan="2">받으실 때</th>
+										<th rowspan="2">사실 때</th>
+										<th rowspan="2">파실 때</th>
+										<th colspan="2">스프레드(%)</th>
+									</tr>
+									<tr>
+										<th>사실 때</th>
+										<th>파실 때</th>
+									</tr>
+									<tr>
+										<td>USD(미국달러)</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<h4>맞춤정보 설정</h4>
+						<div class="block-line"></div>
+						<div>
+							<form>
+								<div class="form-div">
+									<p class="form-cat">환율종류</p>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+										<label class="form-check-label" for="exampleRadios1">
+											매매기준율
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+										<label class="form-check-label" for="exampleRadios2">
+											현찰 사실 때
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+										<label class="form-check-label" for="exampleRadios2">
+											현찰 파실 때
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+										<label class="form-check-label" for="exampleRadios2">
+											송금 보내실 때
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+										<label class="form-check-label" for="exampleRadios2">
+											송금 받으실 때
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+										<label class="form-check-label" for="exampleRadios2">
+											여행자 수표 사실 때
+										</label>
+									</div>
+								</div>
+
+								<div class="form-div">
+									<p class="form-cat">환율범위</p>
+									최저
+									<input type="text" class="form-control" /> .
+									<input type="text" class="form-control" /> ~
+									최고
+									<input type="text" class="form-control" /> .
+									<input type="text" class="form-control" />
+								</div>
+
+								<div class="form-div">
+									<p class="form-cat">알림기간</p>
+									<span>
+										신청일부터 3개월이내에서 지정환율대 도달하여 통지시까지 (KB스타 알림 가입일 익일부터 적용)
+									</span>
+								</div>
+								<div>
+									<button type="submit" id="alarmSaveBtn" class="btn btn-primary mb-2">저장</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+		});
+	</script>
+</html>

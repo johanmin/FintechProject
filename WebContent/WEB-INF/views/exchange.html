@@ -1,0 +1,144 @@
+<html>
+	<head>
+    	<title>TEST</title>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="../../css/common.css">
+
+		<style>
+			.form-div {
+				margin-bottom: 20px;
+			}
+			.form-div .form-cat{
+				font-weight: 600;
+				font-size: 16px;
+			}
+		</style>
+	</head>  
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>KB-fintech은행</h4>
+				</div>
+				
+				<div class="col-lg-12">
+					<div class="top-menu col-lg-4">환율</div>
+					<div class="top-menu col-lg-4 active">환전</div>
+					<div class="top-menu col-lg-4">계좌</div>
+				</div>
+
+				<div class="col-lg-12">
+                    <form>
+                        <div class="form-div">
+                            <p class="form-cat">환전신청구분</p>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="extypeRadio1" name="extypeRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="extypeRadio1">외화현찰</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="extypeRadio2" name="extypeRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="extypeRadio2">여행자 수표</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-div">
+                            <p class="form-cat">환전신청통화</p>
+                            <select class="form-control">
+                                <option>USD(미국 달러)</option>
+                            </select>
+                            <span>(최소금액: 10)</span>
+                        </div>
+
+                        <div class="form-div">
+                            <p class="form-cat">외화현찰신청금액</p>
+                            <input type="text" class="form-control" placeholder="숫자만입력" />
+                        </div>
+
+                        <div class="form-div">
+                            <p class="form-cat">환전사유</p>
+                            <select class="form-control">
+                                <option>관광, 친지방문 등 일반해외여행경비</option>
+                            </select>
+                        </div>
+
+                        <div class="form-div">
+                            <p class="form-cat">여행자보험</p>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="insurRadio1" name="insurRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="insurRadio1">가입 희망</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="insurRadio2" name="insurRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="insurRadio2">가입 미희망</label>
+                            </div>
+                        </div>
+
+                        <div class="form-div">
+                            <p class="form-cat">환율우대율 및 예상환산금액</p>
+                            <div>
+                                <span>
+                                    현재고시환율: <br>
+                                    우대적용환율: <br>
+                                    예상대미환산금액: <br>
+                                    예상원화환산금액: <br>
+                                </span>
+                                <span>
+                                    실제 거래시 적용되는 환율에 따라 변동될 수 있습니다.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-div">
+                            <p class="form-cat">출금계좌번호</p>
+                            <input type="text" class="form-control" />
+                            <button class="btn btn-default">출금가능금액</button>
+                        </div>
+
+                        <div class="form-div">
+                            <p class="form-cat">계좌비밀번호</p>
+                            <input type="password" class="form-control" placeholder="숫자 4자리" />
+                        </div>
+
+                        <div class="form-div">
+                            <p class="form-cat">입금계좌번호</p>
+                            <select class="form-control">
+                                <option>442802-01-340990 (외화보통예..)</option>
+                                <option>442802-01-168005 (외화최저가..)</option>
+                                <option>442802-01-455219 (외화초초초..)</option>
+                                <option>계좌생성하기</option>
+                            </select>
+                        </div>
+
+                        <div class="form-div">
+                            <p class="form-cat">입금계좌생성</p>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="accountRadio1" name="accountRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="accountRadio1">기본외환 입출금 통장</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="accountRadio2" name="accountRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="accountRadio2">특별우대 입출금 통장</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="accountRadio3" name="accountRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="accountRadio3">여행자우대 입출금 통장</label>
+                            </div>
+                        </div>
+
+                        <div class="form-div">
+                            <button class="btn btn-primary">환전하기</button>
+                        </div>
+                    </form>
+                </div>
+			</div>
+		</div>
+	</body>
+	<script>
+		
+	</script>
+</html>
