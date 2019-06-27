@@ -1,0 +1,28 @@
+.top-menu {
+    background-color: #fff;
+    text-align: center;
+    height: 60px;
+    color: #f8c600;
+    border: 1px solid #f8c600;
+    font-size: 20px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.top-menu.active {
+    background-color: #f8c600;
+    color: #fff;
+}
+.top-menu:hover {
+    background-color: #f8c600;
+    color: #fff;
+}
+.main-content {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.block-line {
+    border-top: 1px solid #DDD; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
